@@ -1,0 +1,28 @@
+# 이 저장소는 코드와 문서만 담습니다.
+# 카드 이미지·카드 데이터는 원저작자의 자산이므로 실수로도 올라가지 않도록 차단합니다.
+
+*.jpg
+*.jpeg
+*.psd
+*.asset
+*.meta
+CardDatabase*.json
+card_post_map.tsv
+
+# 예외 — 문서용 이미지
+!docs/*.png
+!docs/*.svg
+
+# Unity / 빌드 산출물
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+*.csproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="Apple SD Gothic Neo, AppleSDGothicNeo, Malgun Gothic, sans-serif">
+  <defs>
+    <marker id="arw" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,1 L11,6 L0,11 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#FFFFFF"/>
+
+  <!-- 제목 -->
+  <text x="800" y="62" text-anchor="middle" font-size="40" font-weight="700" fill="#0F172A">온라인 대전 구조</text>
+  <text x="800" y="104" text-anchor="middle" font-size="21" fill="#64748B">모든 행동과 선택을 단일 지점으로 수렴시켜, 오프라인 · 온라인 분기를 세 곳 안에 가둠</text>
+
+  <!-- 입력 -->
+  <rect x="640" y="150" width="320" height="66" rx="33" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="800" y="192" text-anchor="middle" font-size="24" font-weight="600" fill="#334155">UI  ·  AI</text>
+  <line x1="800" y1="216" x2="800" y2="262" stroke="#475569" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- 1. GameActionGateway -->
+  <rect x="450" y="270" width="700" height="112" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="3"/>
+  <text x="800" y="312" text-anchor="middle" font-size="28" font-weight="700" fill="#1E3A8A">GameActionGateway</text>
+  <text x="800" y="345" text-anchor="middle" font-size="20" fill="#1D4ED8">모든 &#34;행동&#34;의 단일 입구</text>
+  <text x="800" y="370" text-anchor="middle" font-size="17" fill="#64748B">배치 · 공격 · 스킬 · 아이템 · 페이즈 종료</text>
+  <line x1="800" y1="382" x2="800" y2="428" stroke="#475569" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- 2. ChoiceBroker -->
+  <rect x="450" y="436" width="700" height="112" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="3"/>
+  <text x="800" y="478" text-anchor="middle" font-size="28" font-weight="700" fill="#1E3A8A">ChoiceBroker</text>
+  <text x="800" y="511" text-anchor="middle" font-size="20" fill="#1D4ED8">모든 &#34;선택&#34;의 단일 지점</text>
+  <text x="800" y="536" text-anchor="middle" font-size="17" fill="#64748B">카드 선택 · 방어 선언 · 멀리건</text>
+  <line x1="800" y1="548" x2="800" y2="594" stroke="#475569" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- 3. NetHub -->
+  <rect x="450" y="602" width="700" height="92" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="3"/>
+  <text x="800" y="644" text-anchor="middle" font-size="28" font-weight="700" fill="#1E3A8A">NetHub  →  INetChannel</text>
+  <text x="800" y="676" text-anchor="middle" font-size="20" fill="#1D4ED8">네트워크 경계</text>
+
+  <!-- 분기 -->
+  <path d="M800,694 L800,724 M420,724 L1180,724 M420,724 L420,756 M1180,724 L1180,756"
+        fill="none" stroke="#475569" stroke-width="2.5"/>
+  <line x1="420" y1="744" x2="420" y2="764" stroke="#475569" stroke-width="2.5" marker-end="url(#arw)"/>
+  <line x1="1180" y1="744" x2="1180" y2="764" stroke="#475569" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- 구현 2종 -->
+  <rect x="180" y="772" width="480" height="104" rx="10" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2.5"/>
+  <text x="420" y="812" text-anchor="middle" font-size="25" font-weight="700" fill="#334155">LocalChannel</text>
+  <text x="420" y="843" text-anchor="middle" font-size="19" fill="#64748B">오프라인 — 내가 곧 권위자</text>
+
+  <rect x="940" y="772" width="480" height="104" rx="10" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2.5"/>
+  <text x="1180" y="812" text-anchor="middle" font-size="25" font-weight="700" fill="#334155">PhotonNetManager</text>
+  <text x="1180" y="843" text-anchor="middle" font-size="19" fill="#64748B">온라인 — 호스트 권위 · 상태 복제</text>
+
+  <!-- 결과 -->
+  <rect x="180" y="912" width="1240" height="66" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="800" y="954" text-anchor="middle" font-size="21" fill="#14532D">
+    카드 효과 700여 종과 UI는 온라인 여부를 모른 채 그대로 동작  →  <tspan font-weight="700">기존 게임 로직 수정 없이 온라인 대전 추가</tspan>
+  </text>
+</svg>
